@@ -7,7 +7,8 @@
         
         <link rel="shortcut icon" href="./src/imagens/favicon.ico" type="image/x-icon">
         <link rel="stylesheet" href="./src/css/styles.css"/>
-        
+        <link rel="stylesheet" href="./src/css/reset.css"/>        
+        <link rel="stylesheet" href="./src/css/responsivo.css">
 
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -29,8 +30,8 @@
         </a>
         <nav>
             <ul class="menu">
-                <li>Home</li>
-                <li>Detalhes</li>
+                <li><a href="#">  Home</a></li>
+                <li><a href="#">Detalhes</a></li>
             </ul>
         </nav>
     </header>
@@ -41,16 +42,18 @@
             <button class="botao-trailer">Veja o trailer</button>
         </div>
         <img class="mario" src="./src/imagens/super-mario-chars.png"/ alt="super mario chars">
+
+        <div class="modal">
+             <div class="conteudo-modal">
+                <span class="fechar-modal">X</span>
+                <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/Cb4WV4aXBpk" title="Trailer oficial" frameborder="1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+             </div>
+        </div>
     </main>  
        
-    <!-- <script>
-        var botaoTrailer = document.querySelector(".botao-trailer");
-        botaoTrailer.addEventListener("click", function() {
-            var videoId = "YOUR_VIDEO_ID";
-            var videoUrl = "https://www.youtube.com/watch?v=9GC2mqHvxrM" + videoId;
-            window.open(videoUrl, "_blank");
-        });
-    </script> -->
+    <script>
+        
+    </script>
 
 </body>
 </html>
